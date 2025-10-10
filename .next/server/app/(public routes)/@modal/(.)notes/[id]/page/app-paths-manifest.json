@@ -1,3 +1,0 @@
-{
-  "/(public routes)/@modal/(.)notes/[id]/page": "app/(public routes)/@modal/(.)notes/[id]/page.js"
-}

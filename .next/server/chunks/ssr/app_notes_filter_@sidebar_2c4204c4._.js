@@ -1,0 +1,3 @@
+module.exports=[32472,a=>{a.v({menuItem:"SidebarNotes-module__RSw1fa__menuItem",menuLink:"SidebarNotes-module__RSw1fa__menuLink",menuList:"SidebarNotes-module__RSw1fa__menuList"})},74460,a=>{"use strict";a.s(["default",()=>g],74460);var b=a.i(7997),c=a.i(32472);let d=["All","Todo","Work","Personal","Meeting","Shopping"];var e=a.i(97647);function f(){return(0,b.jsx)("ul",{className:c.default.menuList,children:d.map(a=>(0,b.jsx)("li",{className:c.default.menuItem,children:(0,b.jsx)(e.default,{href:`/notes/filter/${a}`,className:c.default.menuLink,children:a})},a))})}function g(){return(0,b.jsx)(f,{})}}];
+
+//# sourceMappingURL=app_notes_filter_%40sidebar_2c4204c4._.js.map
