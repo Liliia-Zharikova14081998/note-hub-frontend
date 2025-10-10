@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: NotesFilterPageProps): Promis
     openGraph: {
       title: `Notes - ${tag}`,
       description: `A collection of notes tagged with ${tag}.`,
-      url: `https://notehub.com`,
+      url: `https://08-zustand-topaz-eight.vercel.app/notes/filter/All`,
       images: [
         {
           url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',

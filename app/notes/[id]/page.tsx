@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: NoteDetailsPageProps): Promis
     openGraph: {
       title: note ? note.title : "Note Not Found",
       description: note ? note.content.slice(0, 30) : "The requested note could not be found.",
-      url: `https://notehub.com`,
+      url: `https://08-zustand-topaz-eight.vercel.app/notes/filter/All`,
       images: [
         {
           url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
