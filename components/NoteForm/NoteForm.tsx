@@ -5,12 +5,12 @@ import { createNote } from "../../lib/api";
 import type { CreateNoteData } from "../../types/note";
 import Link from "next/link";
 import { useNoteDraftStore } from "../../lib/store/noteStore";
-import { useMutation } from '@tanstack/react-query';
+import { useQueryClient, useMutation } from '@tanstack/react-query';
 import { useRouter } from "next/navigation";
 
-
-
 export default function NoteForm() {
+const queryClient = useQueryClient();
+
 const router = useRouter();
  
 const { draft, setDraft, clearDraft } = useNoteDraftStore();
@@ -22,6 +22,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
   const createNoteMutation = useMutation({
     mutationFn: createNote,
     onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['notes'] });
       clearDraft();
       router.back();   
     },
@@ -76,14 +77,12 @@ const handleCancel = () => router.back();
             className={css.select}
             defaultValue={draft.tag}
             onChange={handleChange}
-            required
           >
-            <option value="">Select a tag</option>
             <option value="Todo">Todo</option>
             <option value="Work">Work</option>
             <option value="Personal">Personal</option>
             <option value="Meeting">Meeting</option>
-            <option value="Shoping">Shoping</option>
+            <option value="Shopping">Shopping</option>
           </select>
       </div>
 

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import CreateNote from "./CreateNote";
+import NoteForm from "./CreateNote";
 
 export const metadata: Metadata = {
   title: "Create Note — NoteHub",
@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function CreateNotePage() {
-  return <CreateNote />;
+  return <NoteForm />;
 }

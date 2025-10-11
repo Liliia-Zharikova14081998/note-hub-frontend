@@ -1,1 +1,6 @@
-{"version":3,"sources":["turbopack:///[project]/app/loading.tsx"],"sourcesContent":["export default function Loading() {\r\n    return (\r\n        <p>Loading, please wait...</p>\r\n    )\r\n}"],"names":[],"mappings":"8EAAe,SAAS,IACpB,MACI,CAAA,EAAA,EAAA,GAAA,EAAC,IAAA,UAAE,2BAEX"}
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/Next.js/08-zustand/app/loading.tsx"],"sourcesContent":["export default function Loading() {\r\n    return (\r\n        <p>Loading, please wait...</p>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;kBAAE;;;;;;AAEX","debugId":null}}]
+}
