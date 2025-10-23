@@ -1,6 +1,45 @@
 {
   "version": 3,
-  "middleware": {},
-  "sortedMiddleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/_3fa74482._.js",
+        "server/edge/chunks/[root-of-the-server]__52b06eb8._.js",
+        "server/edge/chunks/turbopack-edge-wrapper_f64afbda.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/profile(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/profile/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/notes(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/notes/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/sign-in(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/sign-in"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/sign-up(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/sign-up"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "d3r5qUE0YwHzsxLKMA85rlj/35h6xgMjAiOw3Al1xVE=",
+        "__NEXT_PREVIEW_MODE_ID": "a2be79520b39ccb074f938a57ac57f4b",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "e40791461cfc72af020becd89facc67cece5d09c1c2d052a9d1a207e25ea7dc3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "69e188df9bea12066f9c4c6cf9f60b7b59ac1dfcb093ef3071069056107216d0"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
   "functions": {}
 }

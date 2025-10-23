@@ -10,52 +10,15 @@ __turbopack_context__.v({
 "[project]/lib/api.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
-    "createNote",
-    ()=>createNote,
-    "deleteNote",
-    ()=>deleteNote,
-    "fetchNoteById",
-    ()=>fetchNoteById,
-    "fetchNotes",
-    ()=>fetchNotes
-]);
+__turbopack_context__.s([]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
-const TOKEN = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpbGl5YW1hbGlzaG55YUBnbWFpbC5jb20iLCJpYXQiOjE3NTgxMDc4MjJ9.XJHLHQe9Awe6mEEfz6jp0Vwl3zHyEKlKroYZmU83TNo");
-const API_URL = "https://notehub-public.goit.study/api/notes";
+const TOKEN = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_NOTEHUB_TOKEN;
+const API_URL = "https://notehub-api.goit.study/api";
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: API_URL,
-    headers: {
-        Authorization: "Bearer ".concat(TOKEN)
-    }
+    baseURL: API_URL
 });
-async function fetchNotes() {
-    let page = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : 1, tag = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "", search = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : "", perPage = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 12;
-    const params = {
-        page,
-        perPage
-    };
-    if (tag) params.tag = tag;
-    if (search) params.search = search;
-    const response = await api.get("/", {
-        params
-    });
-    return response.data;
-}
-async function createNote(data) {
-    const response = await api.post("", data);
-    return response.data;
-}
-async function deleteNote(id) {
-    const response = await api.delete("/".concat(id));
-    return response.data;
-}
-async function fetchNoteById(id) {
-    const response = await api.get("/".concat(id));
-    return response.data;
-}
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

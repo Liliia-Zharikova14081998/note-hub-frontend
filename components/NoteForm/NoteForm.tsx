@@ -1,7 +1,7 @@
 "use client";
 
 import css from "./NoteForm.module.css"
-import { createNote } from "../../lib/api";
+import { createNote } from "../../lib/api/clientApi";
 import type { CreateNoteData } from "../../types/note";
 import Link from "next/link";
 import { useNoteDraftStore } from "../../lib/store/noteStore";

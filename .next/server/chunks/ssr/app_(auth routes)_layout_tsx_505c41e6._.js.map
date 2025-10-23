@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/Next.js/09-auth/app/%28auth%20routes%29/layout.tsx"],"sourcesContent":["'use client';\r\n\r\nimport { useEffect, useState } from 'react';\r\nimport { useRouter } from 'next/navigation';\r\n\r\ntype Props = {\r\n  children: React.ReactNode;\r\n};\r\n\r\nexport default function AuthLayout({ children }: Props) {\r\n  const [loading, setLoading] = useState(true);\r\n\r\n  const router = useRouter();\r\n\r\n  useEffect(() => {\r\n    router.refresh();\r\n    setLoading(false);\r\n  }, [router]);\r\n\r\n  return <>{loading ? <p>Loading...</p> : children}</>;\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AASe,SAAS,WAAW,EAAE,QAAQ,EAAS;IACpD,MAAM,CAAC,SAAS,WAAW,GAAG,IAAA,iNAAQ,EAAC;IAEvC,MAAM,SAAS,IAAA,+IAAS;IAExB,IAAA,kNAAS,EAAC;QACR,OAAO,OAAO;QACd,WAAW;IACb,GAAG;QAAC;KAAO;IAEX,qBAAO;kBAAG,wBAAU,8OAAC;sBAAE;;;;;mBAAiB;;AAC1C","debugId":null}}]
+}

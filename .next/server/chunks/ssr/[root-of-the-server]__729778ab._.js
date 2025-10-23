@@ -88,50 +88,14 @@ module.exports = mod;
 "[project]/lib/api.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
-    "createNote",
-    ()=>createNote,
-    "deleteNote",
-    ()=>deleteNote,
-    "fetchNoteById",
-    ()=>fetchNoteById,
-    "fetchNotes",
-    ()=>fetchNotes
-]);
+__turbopack_context__.s([]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-ssr] (ecmascript)");
 ;
-const TOKEN = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpbGl5YW1hbGlzaG55YUBnbWFpbC5jb20iLCJpYXQiOjE3NTgxMDc4MjJ9.XJHLHQe9Awe6mEEfz6jp0Vwl3zHyEKlKroYZmU83TNo");
-const API_URL = "https://notehub-public.goit.study/api/notes";
+const TOKEN = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
+const API_URL = "https://notehub-api.goit.study/api";
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: API_URL,
-    headers: {
-        Authorization: `Bearer ${TOKEN}`
-    }
+    baseURL: API_URL
 });
-async function fetchNotes(page = 1, tag = "", search = "", perPage = 12) {
-    const params = {
-        page,
-        perPage
-    };
-    if (tag) params.tag = tag;
-    if (search) params.search = search;
-    const response = await api.get("/", {
-        params
-    });
-    return response.data;
-}
-async function createNote(data) {
-    const response = await api.post("", data);
-    return response.data;
-}
-async function deleteNote(id) {
-    const response = await api.delete(`/${id}`);
-    return response.data;
-}
-async function fetchNoteById(id) {
-    const response = await api.get(`/${id}`);
-    return response.data;
-}
 }),
 "[project]/components/NoteList/NoteList.module.css [app-ssr] (css module)", ((__turbopack_context__) => {
 

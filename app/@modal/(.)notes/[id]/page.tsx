@@ -1,6 +1,6 @@
 import NotePreview from "@/app/@modal/(.)notes/[id]/NotePreview.client";
 import type { NoteDetailsPageProps } from "@/types/params";
-import { fetchNoteById } from "@/lib/api";
+import { fetchNoteById } from "@/lib/api/serverApi";
 import { HydrationBoundary, dehydrate, QueryClient } from "@tanstack/react-query";
 import { Metadata } from "next";
 
