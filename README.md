@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗒️ NoteHub (Frontend)
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?logo=cssmodules&logoColor=white)
 
-First, run the development server:
+## 📌 Project Overview
+NoteHub is a modern web application for efficient note management, developed using **Next.js** and **TypeScript**. The project focuses on clean architecture, strong typing, and a seamless user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
+- **User Authentication:** Secure sign-up and login system to protect personal data.
+- **Note Management:** Full CRUD (Create, Read, Update, Delete) cycle for personal notes.
+- **Protected Routes:** Security-first navigation—content is only accessible to authorized users.
+- **Type Safety:** Comprehensive data and component typing using **TypeScript**.
+- **Responsive Design:** Adaptive layout built with **CSS Modules** for optimal viewing on any device.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Tech Stack
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **State Management:** React Hooks / Context API
+- **API Communication:** Axios
+- **Form Handling:** Formik + Yup validation
+- **Styling:** CSS Modules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ▶️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Liliia-Zharikova14081998/note-hub-frontend.git](https://github.com/Liliia-Zharikova14081998/note-hub-frontend.git)
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+## 🧠 Purpose of the Project
+This project was developed to master the Next.js ecosystem, including server and client components, and to implement advanced TypeScript patterns in a real-world frontend application.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📫 Author
+Liliia Zharikova
+[Git Hub](https://github.com/Liliia-Zharikova14081998)
