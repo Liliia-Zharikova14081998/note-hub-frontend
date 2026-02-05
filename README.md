@@ -12,7 +12,7 @@ NoteHub is a modern web application for efficient note management, developed usi
 
 🔗 [Live Demo Link](https://09-auth-dusky-pi.vercel.app/)
 
-## 🚀 Key Features
+## ✨ Key Features
 - **User Authentication:** Secure sign-up and login system to protect personal data.
 - **Note Management:** Full CRUD (Create, Read, Update, Delete) cycle for personal notes.
 - **Protected Routes:** Security-first navigation—content is only accessible to authorized users.
