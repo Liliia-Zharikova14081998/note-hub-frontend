@@ -28,13 +28,13 @@ NoteHub is a modern web application for efficient note management, developed usi
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Liliia-Zharikova14081998/note-hub-frontend.git](https://github.com/Liliia-Zharikova14081998/note-hub-frontend.git)
+   git clone https://github.com/Liliia-Zharikova14081998/note-hub-frontend.git
    ```
-2. **Install dependencies:**
+2. **Install dependencies:** 
    ```bash
    npm install
    ```
-3. **Run the development server:**
+4. **Run the development server:**
    ```bash
    npm run dev
    ```
@@ -44,4 +44,5 @@ This project was developed to master the Next.js ecosystem, including server and
 
 ## 📫 Author
 Liliia Zharikova
+
 [Git Hub](https://github.com/Liliia-Zharikova14081998)
