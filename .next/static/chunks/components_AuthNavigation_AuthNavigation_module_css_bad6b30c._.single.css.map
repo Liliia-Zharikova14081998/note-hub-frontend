@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/AuthNavigation/AuthNavigation.module.css"],"sourcesContent":[".userEmail {\r\n  color: white;\r\n  margin-right: 0.5rem;\r\n  font-size: 0.9rem;\r\n}\r\n\r\n.logoutButton {\r\n  background: transparent;\r\n  border: 1px solid white;\r\n  color: white;\r\n  padding: 0.3rem 0.6rem;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n  font-size: 0.9rem;\r\n  transition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease;\r\n}\r\n\r\n.logoutButton:hover {\r\n  background-color: white;\r\n  color: #333;\r\n}\r\n\r\n.navigation {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n  display: flex;\r\n  gap: 1rem;\r\n}\r\n\r\n.navigationItem {\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.navigationLink {\r\n  text-decoration: none;\r\n  color: white;\r\n  font-size: 1rem;\r\n}\r\n\r\n.navigationLink:hover {\r\n  color: #ddd;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;;AAaA;;;;;AAKA;;;;;;;;AAQA;;;;;AAKA;;;;;;AAMA"}}]
-}
