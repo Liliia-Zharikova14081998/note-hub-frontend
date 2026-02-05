@@ -8,6 +8,10 @@
 ## 📌 Project Overview
 NoteHub is a modern web application for efficient note management, developed using **Next.js** and **TypeScript**. The project focuses on clean architecture, strong typing, and a seamless user experience.
 
+## 🚀 Demo
+
+🔗 [Live Demo Link](https://09-auth-dusky-pi.vercel.app/)
+
 ## 🚀 Key Features
 - **User Authentication:** Secure sign-up and login system to protect personal data.
 - **Note Management:** Full CRUD (Create, Read, Update, Delete) cycle for personal notes.
